@@ -1,88 +1,185 @@
-const materias = [
-  // Semestre I
-  { nombre: 'Cálculo diferencial', creditos: 4, requisitos: [], semestre: 1 },
-  { nombre: 'Geometría y trigonometría', creditos: 2, requisitos: [], semestre: 1 },
-  { nombre: 'Introducción a la ingeniería mecánica', creditos: 2, requisitos: [], semestre: 1 },
-  { nombre: 'Programación I', creditos: 3, requisitos: [], semestre: 1 },
-  { nombre: 'Expresión gráfica', creditos: 2, requisitos: [], semestre: 1 },
-  { nombre: 'Química y laboratorio', creditos: 3, requisitos: [], semestre: 1 },
-  { nombre: 'Comunicación oral y escrita I', creditos: 2, requisitos: [], semestre: 1 },
-  // Semestre II
-  { nombre: 'Cálculo integral', creditos: 4, requisitos: ['Cálculo diferencial'], semestre: 2 },
-  { nombre: 'Álgebra lineal', creditos: 3, requisitos: ['Cálculo diferencial'], semestre: 2 },
-  { nombre: 'Física mecánica', creditos: 4, requisitos: ['Geometría y trigonometría'], semestre: 2 },
-  { nombre: 'Programación II', creditos: 3, requisitos: ['Programación I'], semestre: 2 },
-  { nombre: 'Geometría descriptiva', creditos: 2, requisitos: ['Expresión gráfica'], semestre: 2 },
-  { nombre: 'Comunicación oral y escrita II', creditos: 2, requisitos: ['Comunicación oral y escrita I'], semestre: 2 },
-  // Agrega los demás ramos hasta semestre X con sus requisitos como en los anteriores
+const malla = [
+  {
+    nombre: "Semestre I",
+    ramos: [
+      { nombre: "Cálculo Diferencial", creditos: 4, requisitos: [] },
+      { nombre: "Geometría y Trigonometría", creditos: 2, requisitos: [] },
+      { nombre: "Introducción a la Ingeniería Mecánica", creditos: 2, requisitos: [] },
+      { nombre: "Programación I", creditos: 3, requisitos: [] },
+      { nombre: "Expresión Gráfica", creditos: 2, requisitos: [] },
+      { nombre: "Química y Laboratorio", creditos: 3, requisitos: [] },
+      { nombre: "Comunicación Oral y Escrita I", creditos: 2, requisitos: [] },
+    ],
+  },
+  {
+    nombre: "Semestre II",
+    ramos: [
+      { nombre: "Cálculo Integral", creditos: 4, requisitos: ["Cálculo Diferencial"] },
+      { nombre: "Álgebra Lineal", creditos: 3, requisitos: ["Cálculo Diferencial"] },
+      { nombre: "Física Mecánica", creditos: 4, requisitos: ["Geometría y Trigonometría"] },
+      { nombre: "Programación II", creditos: 3, requisitos: ["Programación I"] },
+      { nombre: "Geometría Descriptiva", creditos: 2, requisitos: ["Expresión Gráfica"] },
+      { nombre: "Comunicación Oral y Escrita II", creditos: 2, requisitos: ["Comunicación Oral y Escrita I"] },
+    ],
+  },
+  {
+    nombre: "Semestre III",
+    ramos: [
+      { nombre: "Cálculo Vectorial", creditos: 4, requisitos: ["Cálculo Integral"] },
+      { nombre: "Probabilidad y Estadística", creditos: 3, requisitos: ["Álgebra Lineal"] },
+      { nombre: "Electromagnetismo", creditos: 4, requisitos: ["Física Mecánica"] },
+      { nombre: "Estática", creditos: 3, requisitos: ["Física Mecánica"] },
+      { nombre: "Dibujo de Máquinas", creditos: 2, requisitos: ["Geometría Descriptiva"] },
+      { nombre: "Seminario Investigativo", creditos: 2, requisitos: ["Comunicación Oral y Escrita II"] },
+    ],
+  },
+  {
+    nombre: "Semestre IV",
+    ramos: [
+      { nombre: "Ecuaciones Diferenciales", creditos: 4, requisitos: ["Cálculo Vectorial"] },
+      { nombre: "Ondas y Partículas", creditos: 3, requisitos: ["Electromagnetismo"] },
+      { nombre: "Resistencia de Materiales", creditos: 4, requisitos: ["Estática"] },
+      { nombre: "Dinámica", creditos: 3, requisitos: ["Estática", "Dibujo de Máquinas"] },
+      { nombre: "Ciencias de los Materiales", creditos: 3, requisitos: ["Química y Laboratorio"] },
+    ],
+  },
+  {
+    nombre: "Semestre V",
+    ramos: [
+      { nombre: "Análisis Numérico", creditos: 3, requisitos: ["Ecuaciones Diferenciales", "Probabilidad y Estadística", "Programación II"] },
+      { nombre: "Ingeniería de Materiales", creditos: 3, requisitos: ["Ciencias de los Materiales"] },
+      { nombre: "Constitución Política", creditos: 2, requisitos: ["Seminario Investigativo"] },
+      { nombre: "Seminario: Proyecto de Ingeniería I", creditos: 3, requisitos: ["Resistencia de Materiales"] },
+      { nombre: "Mecánica de Fluidos", creditos: 3, requisitos: ["Dinámica", "Ecuaciones Diferenciales"] },
+      { nombre: "Mecanismos", creditos: 3, requisitos: ["Dinámica"] },
+    ],
+  },
+  {
+    nombre: "Semestre VI",
+    ramos: [
+      { nombre: "Procesos de Manufactura", creditos: 3, requisitos: ["Ingeniería de Materiales"] },
+      { nombre: "Electiva Formación Complementaria I", creditos: 2, requisitos: ["Constitución Política"] },
+      { nombre: "Termodinámica", creditos: 3, requisitos: ["Mecánica de Fluidos"] },
+      { nombre: "Electrotecnia", creditos: 2, requisitos: ["Análisis Numérico", "Ondas y Partículas"] },
+      { nombre: "Máquinas Hidráulicas", creditos: 3, requisitos: ["Mecánica de Fluidos"] },
+      { nombre: "Cálculo de Elementos de Máquinas I", creditos: 4, requisitos: ["Resistencia de Materiales", "Ingeniería de Materiales", "Mecanismos"] },
+    ],
+  },
+  {
+    nombre: "Semestre VII",
+    ramos: [
+      { nombre: "Ingeniería de Procesos", creditos: 3, requisitos: ["Procesos de Manufactura"] },
+      { nombre: "Electiva Formación Complementaria II", creditos: 2, requisitos: ["Electiva Formación Complementaria I"] },
+      { nombre: "Transferencia de Calor", creditos: 4, requisitos: ["Termodinámica"] },
+      { nombre: "Máquinas Eléctricas", creditos: 2, requisitos: ["Electrotecnia"] },
+      { nombre: "Ingeniería Económica", creditos: 2, requisitos: ["Seminario: Proyecto de Ingeniería I"] },
+      { nombre: "Cálculo de Elementos de Máquinas II", creditos: 4, requisitos: ["Cálculo de Elementos de Máquinas I"] },
+    ],
+  },
+  {
+    nombre: "Semestre VIII",
+    ramos: [
+      { nombre: "Electiva Formación Complementaria III", creditos: 2, requisitos: ["Electiva Formación Complementaria II"] },
+      { nombre: "Fundamentos de Control y Automatización", creditos: 2, requisitos: ["Máquinas Eléctricas"] },
+      { nombre: "Factibilidad y Gestión de Proyectos", creditos: 2, requisitos: ["Ingeniería Económica"] },
+      { nombre: "Máquinas Térmicas", creditos: 4, requisitos: ["Termodinámica"] },
+      { nombre: "Ingeniería de Mantenimiento", creditos: 3, requisitos: ["Cálculo de Elementos de Máquinas II"] },
+      { nombre: "Seminario: Proyecto Ingeniería II", creditos: 3, requisitos: ["Ingeniería de Procesos", "Transferencia de Calor", "Cálculo de Elementos de Máquinas II"] },
+    ],
+  },
+  {
+    nombre: "Semestre IX",
+    ramos: [
+      { nombre: "Ética Profesional", creditos: 2, requisitos: ["Electiva Formación Complementaria II"] },
+      { nombre: "Diseño Térmico", creditos: 3, requisitos: ["Transferencia de Calor", "Máquinas Térmicas"] },
+      { nombre: "Electiva Profesional I", creditos: 3, requisitos: ["110"] }, // Créditos mínimos
+      { nombre: "Optativa I", creditos: 3, requisitos: ["Ingeniería de Mantenimiento"] },
+      { nombre: "Práctica Estudiantil", creditos: 4, requisitos: ["Seminario: Proyecto Ingeniería II"] },
+    ],
+  },
+  {
+    nombre: "Semestre X",
+    ramos: [
+      { nombre: "Electiva Profesional II", creditos: 3, requisitos: ["110"] },
+      { nombre: "Electiva Profesional III", creditos: 3, requisitos: ["110"] },
+      { nombre: "Optativa II", creditos: 3, requisitos: ["Ingeniería de Mantenimiento"] },
+      { nombre: "Trabajo de Grado", creditos: 5, requisitos: ["109"] },
+    ],
+  }
 ];
 
-let creditosAprobados = 0;
+// Variables de estado
+let materiasAprobadas = new Set();
 
-function crearMalla() {
-  const malla = document.getElementById('malla');
-  const semestres = [...new Set(materias.map(m => m.semestre))];
+function actualizarCreditos() {
+  let total = 0;
+  document.querySelectorAll(".materia.aprobada").forEach(m => {
+    total += parseInt(m.dataset.creditos);
+  });
+  document.getElementById("creditos-aprobados").innerText = `Créditos aprobados: ${total}`;
+  return total;
+}
 
-  semestres.forEach(semestre => {
-    const divSem = document.createElement('div');
-    divSem.classList.add('semestre');
-    const header = document.createElement('h2');
-    header.textContent = `Semestre ${semestre}`;
-    divSem.appendChild(header);
+function renderMalla() {
+  const contenedor = document.getElementById("malla");
+  contenedor.innerHTML = "";
 
-    const materiasSem = materias.filter(m => m.semestre === semestre);
-    let totalCreditos = 0;
+  const creditosActuales = actualizarCreditos();
 
-    materiasSem.forEach(materia => {
-      totalCreditos += materia.creditos;
-      const div = document.createElement('div');
-      div.className = 'materia';
-      div.textContent = `${materia.nombre} - ${materia.creditos} créditos`;
-      div.dataset.nombre = materia.nombre;
-      div.dataset.requisitos = materia.requisitos.length ? `Requiere: ${materia.requisitos.join(', ')}` : 'Sin requisitos';
+  malla.forEach(semestre => {
+    const divSemestre = document.createElement("div");
+    divSemestre.className = "semestre";
 
-      if (materia.requisitos.length > 0) div.classList.add('bloqueada');
+    const titulo = document.createElement("h2");
+    titulo.textContent = semestre.nombre;
+    divSemestre.appendChild(titulo);
 
-      div.addEventListener('click', () => marcarAprobada(materia.nombre));
-      divSem.appendChild(div);
+    let totalCreditosSem = 0;
+
+    semestre.ramos.forEach(ramo => {
+      const divRamo = document.createElement("div");
+      divRamo.className = "materia";
+      divRamo.textContent = `${ramo.nombre} (${ramo.creditos} créditos)`;
+      divRamo.dataset.nombre = ramo.nombre;
+      divRamo.dataset.creditos = ramo.creditos;
+      divRamo.dataset.requisitos = ramo.requisitos.length
+        ? `Requiere: ${ramo.requisitos.join(", ")}`
+        : "Sin requisitos";
+      totalCreditosSem += ramo.creditos;
+
+      const requisitosCompletos = ramo.requisitos.every(req => {
+        if (!isNaN(req)) return creditosActuales >= parseInt(req);
+        return materiasAprobadas.has(req);
+      });
+
+      if (materiasAprobadas.has(ramo.nombre)) {
+        divRamo.classList.add("aprobada");
+      } else if (!requisitosCompletos) {
+        divRamo.classList.add("bloqueada");
+      }
+
+      divRamo.addEventListener("click", () => {
+        if (divRamo.classList.contains("bloqueada")) return;
+
+        if (materiasAprobadas.has(ramo.nombre)) {
+          materiasAprobadas.delete(ramo.nombre);
+        } else {
+          materiasAprobadas.add(ramo.nombre);
+        }
+        renderMalla();
+      });
+
+      divSemestre.appendChild(divRamo);
     });
 
-    const creditosText = document.createElement('div');
-    creditosText.classList.add('creditos-total');
-    creditosText.textContent = `Total créditos semestre: ${totalCreditos}`;
-    divSem.appendChild(creditosText);
+    const creditosSem = document.createElement("div");
+    creditosSem.className = "creditos-total";
+    creditosSem.textContent = `Total créditos: ${totalCreditosSem}`;
+    divSemestre.appendChild(creditosSem);
 
-    malla.appendChild(divSem);
+    contenedor.appendChild(divSemestre);
   });
 }
 
-function marcarAprobada(nombre) {
-  const div = document.querySelector(`.materia[data-nombre='${nombre}']`);
-  if (div.classList.contains('bloqueada')) return;
-  if (div.classList.contains('aprobada')) return;
-
-  div.classList.add('aprobada');
-  const materia = materias.find(m => m.nombre === nombre);
-  creditosAprobados += materia.creditos;
-  document.getElementById('creditos-aprobados').textContent = `Créditos aprobados: ${creditosAprobados}`;
-
-  desbloquearMaterias();
-}
-
-function desbloquearMaterias() {
-  document.querySelectorAll('.materia.bloqueada').forEach(div => {
-    const nombre = div.dataset.nombre;
-    const materia = materias.find(m => m.nombre === nombre);
-    const requisitosCumplidos = materia.requisitos.every(req => {
-      const aprobada = document.querySelector(`.materia[data-nombre='${req}']`);
-      return aprobada && aprobada.classList.contains('aprobada');
-    });
-
-    if (requisitosCumplidos) {
-      div.classList.remove('bloqueada');
-    }
-  });
-}
-
-window.onload = crearMalla;
+document.addEventListener("DOMContentLoaded", renderMalla);
 
