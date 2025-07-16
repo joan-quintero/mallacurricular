@@ -56,3 +56,24 @@ h1 {
     color: #999;
     cursor: not-allowed;
 }
+.botones-guardar {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.botones-guardar button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2196f3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botones-guardar button:hover {
+  background-color: #1976d2;
+}
+
