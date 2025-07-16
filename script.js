@@ -39,370 +39,369 @@ const ramos = [
     {
         nombre: "📣 Comunicación Oral y Escrita II", creditos: 2, requisitos: ["📣 Comunicación Oral y Escrita I"], semestre: 2
     },
-    [
+    
   {
-    "nombre": "📘 Cálculo Vectorial",
-    "creditos": 4,
-    "requisitos": [
+    nombre: "📘 Cálculo Vectorial",
+    creditos: 4,
+    requisitos: [
       "📘 Cálculo Integral"
     ],
-    "semestre": 3
+    semestre: 3
   },
   {
-    "nombre": "📊 Probabilidad y Estadística",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "📊 Probabilidad y Estadística",
+    creditos: 3,
+    requisitos: [
       "📊 Álgebra Lineal"
     ],
-    "semestre": 3
+    semestre: 3
   },
   {
-    "nombre": "🧲 Electromagnetismo",
-    "creditos": 4,
-    "requisitos": [
+    nombre: "🧲 Electromagnetismo",
+    creditos: 4,
+    requisitos: [
       "🧲 Física Mecánica"
     ],
-    "semestre": 3
+    semestre: 3
   },
   {
-    "nombre": "📐 Estática",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "📐 Estática",
+    creditos: 3,
+    requisitos: [
       "🧲 Física Mecánica"
     ],
-    "semestre": 3
+    semestre: 3
   },
   {
-    "nombre": "🛠️ Dibujo de Máquinas",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "🛠️ Dibujo de Máquinas",
+    creditos: 2,
+    requisitos: [
       "📝 Geometría Descriptiva"
     ],
-    "semestre": 3
+    semestre: 3
   },
   {
-    "nombre": "📣 Seminario Investigativo",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "📣 Seminario Investigativo",
+    creditos: 2,
+    requisitos: [
       "📣 Comunicación Oral y Escrita II"
     ],
-    "semestre": 3
+    semestre: 3
   },
   {
-    "nombre": "🧮 Ecuaciones Diferenciales",
-    "creditos": 4,
-    "requisitos": [
+    nombre: "🧮 Ecuaciones Diferenciales",
+    creditos: 4,
+    requisitos: [
       "📘 Cálculo Vectorial"
     ],
-    "semestre": 4
+    semestre: 4
   },
   {
-    "nombre": "🧪 Ondas y Partículas",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🧪 Ondas y Partículas",
+    creditos: 3,
+    requisitos: [
       "🧲 Electromagnetismo"
     ],
-    "semestre": 4
+    semestre: 4
   },
   {
-    "nombre": "🏗️ Resistencia de Materiales",
-    "creditos": 4,
-    "requisitos": [
+    nombre: "🏗️ Resistencia de Materiales",
+    creditos: 4,
+    requisitos: [
       "📐 Estática"
     ],
-    "semestre": 4
+    semestre: 4
   },
   {
-    "nombre": "🔄 Dinámica",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🔄 Dinámica",
+    creditos: 3,
+    requisitos: [
       "📐 Estática",
       "🛠️ Dibujo de Máquinas"
     ],
-    "semestre": 4
+    semestre: 4
   },
   {
-    "nombre": "🧱 Ciencias de los Materiales",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🧱 Ciencias de los Materiales",
+    creditos: 3,
+    requisitos: [
       "🧪 Química y Laboratorio"
     ],
-    "semestre": 4
+    semestre: 4
   },
   {
-    "nombre": "🔢 Análisis Numérico",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🔢 Análisis Numérico",
+    creditos: 3,
+    requisitos: [
       "🧮 Ecuaciones Diferenciales",
       "📊 Probabilidad y Estadística",
       "💻 Programación II"
     ],
-    "semestre": 5
+    semestre: 5
   },
   {
-    "nombre": "⚙️ Ingeniería de Materiales",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "⚙️ Ingeniería de Materiales",
+    creditos: 3,
+    requisitos: [
       "🧱 Ciencias de los Materiales"
     ],
-    "semestre": 5
+    semestre: 5
   },
   {
-    "nombre": "📜 Constitución Política",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "📜 Constitución Política",
+    creditos: 2,
+    requisitos: [
       "📣 Seminario Investigativo"
     ],
-    "semestre": 5
+    semestre: 5
   },
   {
-    "nombre": "🧪 Proyecto Ingeniería I",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🧪 Proyecto Ingeniería I",
+    creditos: 3,
+    requisitos: [
       "🏗️ Resistencia de Materiales"
     ],
-    "semestre": 5
+    semestre: 5
   },
   {
-    "nombre": "🌊 Mecánica de Fluidos",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🌊 Mecánica de Fluidos",
+    creditos: 3,
+    requisitos: [
       "🔄 Dinámica",
       "🧮 Ecuaciones Diferenciales"
     ],
-    "semestre": 5
+    semestre: 5
   },
   {
-    "nombre": "⚙️ Mecanismos",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "⚙️ Mecanismos",
+    creditos: 3,
+    requisitos: [
       "🔄 Dinámica"
     ],
-    "semestre": 5
+    semestre: 5
   },
   {
-    "nombre": "🏭 Procesos de Manufactura",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🏭 Procesos de Manufactura",
+    creditos: 3,
+    requisitos: [
       "⚙️ Ingeniería de Materiales"
     ],
-    "semestre": 6
+    semestre: 6
   },
   {
-    "nombre": "📘 Electiva Complementaria I",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "📘 Electiva Complementaria I",
+    creditos: 2,
+    requisitos: [
       "📜 Constitución Política"
     ],
-    "semestre": 6
+    semestre: 6
   },
   {
-    "nombre": "🔥 Termodinámica",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🔥 Termodinámica",
+    creditos: 3,
+    requisitos: [
       "🌊 Mecánica de Fluidos"
     ],
-    "semestre": 6
+    semestre: 6
   },
   {
-    "nombre": "💡 Electrotecnia",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "💡 Electrotecnia",
+    creditos: 2,
+    requisitos: [
       "🔢 Análisis Numérico",
       "🧪 Ondas y Partículas"
     ],
-    "semestre": 6
+    semestre: 6
   },
   {
-    "nombre": "🚿 Máquinas Hidráulicas",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🚿 Máquinas Hidráulicas",
+    creditos: 3,
+    requisitos: [
       "🌊 Mecánica de Fluidos"
     ],
-    "semestre": 6
+    semestre: 6
   },
   {
-    "nombre": "🔩 Cálculo Elementos Máquinas I",
-    "creditos": 4,
-    "requisitos": [
+    nombre: "🔩 Cálculo Elementos Máquinas I",
+    creditos: 4,
+    requisitos: [
       "🏗️ Resistencia de Materiales",
       "⚙️ Ingeniería de Materiales",
       "⚙️ Mecanismos"
     ],
-    "semestre": 6
+    semestre: 6
   },
   {
-    "nombre": "🏗️ Ingeniería de Procesos",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🏗️ Ingeniería de Procesos",
+    creditos: 3,
+    requisitos: [
       "🏭 Procesos de Manufactura"
     ],
-    "semestre": 7
+    semestre: 7
   },
   {
-    "nombre": "📘 Electiva Complementaria II",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "📘 Electiva Complementaria II",
+    creditos: 2,
+    requisitos: [
       "📘 Electiva Complementaria I"
     ],
-    "semestre": 7
+    semestre: 7
   },
   {
-    "nombre": "🔥 Transferencia de Calor",
-    "creditos": 4,
-    "requisitos": [
+    nombre: "🔥 Transferencia de Calor",
+    creditos: 4,
+    requisitos: [
       "🔥 Termodinámica"
     ],
-    "semestre": 7
+    semestre: 7
   },
   {
-    "nombre": "⚡ Máquinas Eléctricas",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "⚡ Máquinas Eléctricas",
+    creditos: 2,
+    requisitos: [
       "💡 Electrotecnia"
     ],
-    "semestre": 7
+    semestre: 7
   },
   {
-    "nombre": "💰 Ingeniería Económica",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "💰 Ingeniería Económica",
+    creditos: 2,
+    requisitos: [
       "🧪 Proyecto Ingeniería I"
     ],
-    "semestre": 7
+    semestre: 7
   },
   {
-    "nombre": "🔩 Cálculo Elementos Máquinas II",
-    "creditos": 4,
-    "requisitos": [
+    nombre: "🔩 Cálculo Elementos Máquinas II",
+    creditos: 4,
+    requisitos: [
       "🔩 Cálculo Elementos Máquinas I"
     ],
-    "semestre": 7
+    semestre: 7
   },
   {
-    "nombre": "📘 Electiva Complementaria III",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "📘 Electiva Complementaria III",
+    creditos: 2,
+    requisitos: [
       "📘 Electiva Complementaria II"
     ],
-    "semestre": 8
+    semestre: 8
   },
   {
-    "nombre": "🤖 Control y Automatización",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "🤖 Control y Automatización",
+    creditos: 2,
+    requisitos: [
       "⚡ Máquinas Eléctricas"
     ],
-    "semestre": 8
+    semestre: 8
   },
   {
-    "nombre": "📊 Gestión de Proyectos",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "📊 Gestión de Proyectos",
+    creditos: 2,
+    requisitos: [
       "💰 Ingeniería Económica"
     ],
-    "semestre": 8
+    semestre: 8
   },
   {
-    "nombre": "🔥 Máquinas Térmicas",
-    "creditos": 4,
-    "requisitos": [
+    nombre: "🔥 Máquinas Térmicas",
+    creditos: 4,
+    requisitos: [
       "🔥 Termodinámica"
     ],
-    "semestre": 8
+    semestre: 8
   },
   {
-    "nombre": "🔧 Ingeniería de Mantenimiento",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🔧 Ingeniería de Mantenimiento",
+    creditos: 3,
+    requisitos: [
       "🔩 Cálculo Elementos Máquinas II"
     ],
-    "semestre": 8
+    semestre: 8
   },
   {
-    "nombre": "🧪 Proyecto Ingeniería II",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🧪 Proyecto Ingeniería II",
+    creditos: 3,
+    requisitos: [
       "🏗️ Ingeniería de Procesos",
       "🔥 Transferencia de Calor",
       "🔩 Cálculo Elementos Máquinas II"
     ],
-    "semestre": 8
+    semestre: 8
   },
   {
-    "nombre": "🧭 Ética Profesional",
-    "creditos": 2,
-    "requisitos": [
+    nombre: "🧭 Ética Profesional",
+    creditos: 2,
+    requisitos: [
       "📘 Electiva Complementaria II"
     ],
-    "semestre": 9
+    semestre: 9
   },
   {
-    "nombre": "🔥 Diseño Térmico",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🔥 Diseño Térmico",
+    creditos: 3,
+    requisitos: [
       "🔥 Transferencia de Calor",
       "🔥 Máquinas Térmicas"
     ],
-    "semestre": 9
+    semestre: 9
   },
   {
-    "nombre": "🎓 Electiva Profesional I",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🎓 Electiva Profesional I",
+    creditos: 3,
+    requisitos: [
       "110 créditos aprobados"
     ],
-    "semestre": 9
+    semestre: 9
   },
   {
-    "nombre": "🧩 Optativa I",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🧩 Optativa I",
+    creditos: 3,
+    requisitos: [
       "🔧 Ingeniería de Mantenimiento"
     ],
-    "semestre": 9
+    semestre: 9
   },
   {
-    "nombre": "👷 Práctica Estudiantil",
-    "creditos": 4,
-    "requisitos": [
+    nombre: "👷 Práctica Estudiantil",
+    creditos: 4,
+    requisitos: [
       "🧪 Proyecto Ingeniería II"
     ],
-    "semestre": 9
+    semestre: 9
   },
   {
-    "nombre": "🎓 Electiva Profesional II",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🎓 Electiva Profesional II",
+    creditos: 3,
+    requisitos: [
       "110 créditos aprobados"
     ],
-    "semestre": 10
+    semestre: 10
   },
   {
-    "nombre": "🎓 Electiva Profesional III",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🎓 Electiva Profesional III",
+    creditos: 3,
+    requisitos: [
       "110 créditos aprobados"
     ],
-    "semestre": 10
+    semestre: 10
   },
   {
-    "nombre": "🧩 Optativa II",
-    "creditos": 3,
-    "requisitos": [
+    nombre: "🧩 Optativa II",
+    creditos: 3,
+    requisitos: [
       "🔧 Ingeniería de Mantenimiento"
     ],
-    "semestre": 10
+    semestre: 10
   },
   {
-    "nombre": "📜 Trabajo de Grado",
-    "creditos": 5,
-    "requisitos": [
+    nombre: "📜 Trabajo de Grado",
+    creditos: 5,
+    requisitos: [
       "109 créditos aprobados"
     ],
-    "semestre": 10
+    semestre: 10
   }
-
     // Se pueden agregar más semestres aquí (3 al 10)...
 ];
 
@@ -446,5 +445,31 @@ function actualizarUI() {
         container.appendChild(bloque);
     }
 }
+div.dataset.nombre = subject.nombre;
+function guardarProgreso() {
+  const estado = {};
+  document.querySelectorAll('.subject').forEach(subject => {
+    estado[subject.dataset.nombre] = subject.classList.contains('aprobado');
+  });
+  localStorage.setItem('estadoRamos', JSON.stringify(estado));
+  alert("✅ Progreso guardado correctamente.");
+}
+function cargarProgreso() {
+  const estado = JSON.parse(localStorage.getItem('estadoRamos') || '{}');
+  document.querySelectorAll('.subject').forEach(subject => {
+    const aprobado = estado[subject.dataset.nombre];
+    if (aprobado) {
+      subject.classList.add('aprobado');
+    } else {
+      subject.classList.remove('aprobado');
+    }
+  });
+  actualizarEstado(); // Para recalcular materias desbloqueadas
+}
+document.getElementById('guardarBtn').addEventListener('click', guardarProgreso);
+document.getElementById('cargarBtn').addEventListener('click', cargarProgreso);
+
+// Cargar estado automáticamente al abrir la página
+window.addEventListener('load', cargarProgreso);
 
 actualizarUI();
